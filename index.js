@@ -1,6 +1,7 @@
 const nemo = ["nemo"];
 const everyone = ["bloat", "dory", "bruce", 
 "marlin", "gill", "nemo"];
+const large = new Array(10000).fill("nemo")
 
 function findNemo(array) {
   let t0 = performance.now();
@@ -14,5 +15,6 @@ function findNemo(array) {
 }
 findNemo(nemo);
 findNemo(everyone)
+findNemo(large)
 
 //practicing good coding concepts just started ZTM DS and ALG course
