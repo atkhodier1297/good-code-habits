@@ -1,20 +1,19 @@
 const nemo = ["nemo"];
 const everyone = ["bloat", "dory", "bruce", 
 "marlin", "gill", "nemo"];
-const large = new Array(10000).fill("nemo")
+const large = new Array(100000).fill("nemo")
 
 function findNemo(array) {
-  let t0 = performance.now();
+  //let t0 = performance.now();
   for (let i = 0; i < array.length; i++) {
     if (array[i] === "nemo") {
       console.log("Found Nemo");
     }
   }
-  let t1 = performance.now();
-  console.log("Call to find Nemo took " + (t1 - t0) + "milliseconds");
+  //let t1 = performance.now();
+  //console.log("Call to find Nemo took " + (t1 - t0) + "milliseconds");
 }
-findNemo(nemo);
-findNemo(everyone)
-findNemo(large)
+findNemo(large); // O(n) --> Linear Time n is the number of executable inputs
+// as the inpouts increase the number of operations increase linearly most common Big O you will find
 
-//practicing good coding concepts just started ZTM DS and ALG course
+
