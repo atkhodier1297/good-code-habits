@@ -13,7 +13,19 @@ function findNemo(array) {
   //let t1 = performance.now();
   //console.log("Call to find Nemo took " + (t1 - t0) + "milliseconds");
 }
-findNemo(large); // O(n) --> Linear Time n is the number of executable inputs
+//findNemo(large); 
+// O(n) --> Linear Time n is the number of executable inputs
 // as the inpouts increase the number of operations increase linearly most common Big O you will find
 
 
+const boxes = [0,1,2,3,4,5,6,7,8,9]
+
+function logBox(boxes) {
+  console.log(boxes[0]) // O(1)
+  console.log(boxes[1]) // O(1)
+}
+
+logBox(boxes) //O(2) still a flat line
+
+// we round it down to O(1) for ease of use
+// it doesnt matter how big the inputs are we are always looking at constant time
